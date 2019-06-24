@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+hiiii
+There are {{count}} words<br>
+<a href='{% url "home" %}'> Start Again </a>
+
+<br>
+{{fulltext}}
+<br>
+{% for key,value in sortedwords %}
+<br>
+
+
+{{key}} - {{value}}
+<br>
+
+
+{% endfor %}
+
+</body>
+</html>
